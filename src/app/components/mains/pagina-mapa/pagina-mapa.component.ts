@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CesiumService } from '../../../cesium.service';
 
 @Component({
   selector: 'app-pagina-mapa',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './pagina-mapa.component.html',
   styleUrl: './pagina-mapa.component.css'
 })
-export class PaginaMapaComponent {
+export class PaginaMapaComponent implements OnInit {
 
-}
+  constructor(private cesium: CesiumService) { }
+  
+  ngOnInit(): void {
+    this.cesium.plotPoints("cesium");
+  }
+
+}3

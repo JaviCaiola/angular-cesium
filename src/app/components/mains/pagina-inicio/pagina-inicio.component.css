@@ -25,6 +25,7 @@
 }
 
 .card:hover{
+    cursor: pointer;
     transition: all .5s;
     /*color de fondo*/
     background-size: 100% 100%;

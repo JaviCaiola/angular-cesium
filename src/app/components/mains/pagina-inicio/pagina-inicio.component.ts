@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-inicio',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './pagina-inicio.component.css'
 })
 export class PaginaInicioComponent {
+
+  constructor(private router: Router){
+
+  }
+
+  visormapa() {
+    this.router.navigate(['/visor-mapa'])
+  }
 
 }
