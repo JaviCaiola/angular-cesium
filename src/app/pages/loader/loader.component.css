@@ -1,0 +1,16 @@
+.loader-back{
+    height: 100vh;
+    width: 100%;
+    background: #00000060;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.loader-back img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
