@@ -8,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './loader.component.css'
 })
 export class LoaderComponent {
-  
-  showLoader: boolean = false;
 
 }
