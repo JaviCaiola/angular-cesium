@@ -18,4 +18,8 @@ export class PaginaInicioComponent {
     this.router.navigate(['/visor-mapa'])
   }
 
+  presentacion() {
+    this.router.navigate(['/presentacion'])
+  }
+
 }
